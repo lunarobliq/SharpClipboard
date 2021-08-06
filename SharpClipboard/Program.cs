@@ -95,7 +95,13 @@ public sealed class ClipboardNotification
 
     private static void Main(string[] args)
     {
-        //starts a message loop on current thread and displays specified form
+        if (args.Length>1)
+        {
+            Console.WriteLine("Compiled and executed!");
+        }
+        else
+        {        //starts a message loop on current thread and displays specified form
         Application.Run(new NotificationForm());
+        }
     }
 }
